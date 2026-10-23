@@ -144,7 +144,7 @@ $('#scnext').onclick=()=>{scI++;$('#scnext').classList.add('hide');cover()};cove
 let opened=false;
 const MG=t=>{t=t.toLowerCase().replace(/[^a-z\u0900-\u097f ]/g,' ');return /(i|aai|ai)\s*(love|luv|lov)\s*(you|u|yu|yoo)|love you|luv u|ily|लव यू|आई लव|मैं तुमसे प्यार|मैं तुझसे प्यार|तुमसे प्यार|तुझसे प्यार|i love/.test(t)};
 function tryMW(t){if(opened)return;const r=$('#mres');
- if(MG(t)){opened=true;$('#chest').textContent='💖';r.textContent='Aww! Main bhi tumse sabse zyada pyaar karta hoon, Muskan 🥰';hearts(30,['❤️','💖','🥰','✨'])}
+ if(MG(t)){opened=true;$('#chest').textContent='💖';r.textContent='i toooooo love you mere shivaya ki mummy hearts(30,['❤️','💖','🥰','✨'])}
  else r.textContent='Hmm, ye toh nahi tha 😜 Jaadui line hai: "I love you"'}
 $('#mgo').onclick=()=>tryMW($('#mw').value);
 $('#mw').addEventListener('keydown',e=>{if(e.key==='Enter')tryMW($('#mw').value)});
